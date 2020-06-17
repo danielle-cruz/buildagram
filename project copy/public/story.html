@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/icon.png">
+    <title>Buildagram</title>
+
+    <!-- These two lines provide automatic page and style reloading when files change -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/lib/client/updater.js" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <div id="nav-bar">
+      <!-- course number link -->
+      <nav id="logo">
+        <a href="index.html">
+          <img src="images/icon.png"> Buildagram
+        </a>
+      </nav>
+      <nav>
+        <ul id="nav-links">
+        <!-- navigation links -->
+          <li><a href="index.html">About</a></li>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- story -->
+    <div id="story" class="banner">
+      <div id="title">
+        <h1>Our Story</h1>
+      </div>
+      <img src="images/story/wooden.png">
+      <div class="caption">
+        <h2>“I love building, but I hate math.” &mdash; Anna, 7 years old</h2>
+        <p>How many kids do you know who love designing structures and assembling toys, but when it comes to activities like folding geometric nets or finding surface area, they tend to lose that spark? </p>
+
+        <p>It’s no wonder that math and creativity seem so separate. Traditionally characterized by worksheets and equations, math / geometry are often seen as uncreative. They aren't thought of as hands-on or play-oriented, yet geometry is an integral part of math education starting in as early as first grade (Common Core). So why don’t we see more construction kits or maker sets for geometry like we see for science or engineering?</p>
+
+        <!--<h2>The Issue</h2>
+        <p><strong>“I love building, but I hate math.”</strong> &mdash; Anna, 7 years old</p>
+        <p>Traditionally characterized by worksheets and equations, math is often seen as uncreative; it isn’t thought of as hands-on or play-oriented. So when our team was tasked with designing an educational toy for Anna, we wanted to build something that <strong>bridged geometry with creativity</strong>.</p>-->
+      </div>
+      <a href="http://www.corestandards.org/Math/Content/G/">
+        <button>See geometry standards</button>
+      </a>
+    </div>
+
+    <!-- description -->
+    <div id="description">
+      <div class="caption">
+        <h2>Cue Buildagram!</h2>
+        <p>We created Buildagram as an answer to the question: “How can we bridge geometry with creativity?” By playing with the angles and polygons of Buildagram, kids will develop a stronger grasp of shapes and spatial relationships. They will develop positive feelings about math and boost their creative confidence — all without sacrificing fun or creativity.</p>
+      </div>
+    </div>
+
+    <!-- user tests -->
+    <div id="components" class="style2">
+      <h2>What do learners think?</h2>
+      <div id="component-images">
+        <img src="/images/story/anna.png">
+        <img src="/images/story/sister.png">
+        <img src="/images/story/teachers.png">
+      </div>
+      <div>
+        <div class="component">
+          <h3>2nd grader</h3>
+          <p>This animal-loving second-grader constructed an entire zoo using Buildagram pieces! Above are just some of the animals that she created, including an elephant, giraffe, and lion. At the end of the day, she can always take apart these animals and create new ones for the next zoo.</p>
+        </div>
+        <div class="component">
+          <h3>Pre-schooler</h3>
+          <p>While two- to three-dimensional relations were still a bit complex for this pre-schooler, she still enjoyed experimenting with the pieces and finding new ways to connect them! At this age, Buildagram helps in developing motor skills and early spatial reasoning.</p>
+        </div>
+        <div class="component">
+          <h3>Educators</h3>
+          <p>These teachers from Jamaica loved how engaging Buildagram was. Seeing potential beyond just geometry, they even envisioned applying Buildagram to their lessons about circuitry and anatomy &mdash; they liked Buildagram so much that they ended up taking a set home!</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- footer -->
+    <div id="footer">
+      Danielle Cruz 2020
+    </div>
+
+
+
+
+  </body>
+</html>

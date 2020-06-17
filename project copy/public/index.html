@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/icon.png">
+    <title>Buildagram</title>
+
+    <!-- These two lines provide automatic page and style reloading when files change -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/lib/client/updater.js" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <div id="nav-bar">
+      <!-- course number link -->
+      <nav id="logo">
+        <a href="index.html">
+          <img src="images/icon.png"> Buildagram
+        </a>
+      </nav>
+      <nav>
+        <ul id="nav-links">
+        <!-- navigation links -->
+          <li><a href="index.html">About</a></li>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- welcome -->
+    <div id="welcome" class="banner">
+      <div id="title">
+        <h1>Buildagram is a constructionist environment for spatial reasoning.</h1>
+      </div>
+      <img id="main-banner" src="images/about/banner.png">
+      <div class="caption">
+        <p><strong>Buildagram</strong> is a construction set that empowers learners to make their ideas concrete by exploring mathematical shapes and relations. Buildagram unites the creativity of free-play with the structure of geometry, allowing learners to take the 2D shapes of a tangram puzzle and transform them into boundless 3D creations. </p>
+      </div>
+      <a href="/story.html">
+        <button>Learn more</button>
+      </a>
+    </div>
+
+    <!-- components -->
+    <div id="components" class="style1">
+      <h2>What comes with Buildagram?</h2>
+      <div id="component-images">
+        <img src="/images/about/set.png">
+        <img src="/images/about/cards-tri.png">
+        <img src="/images/about/application.png">
+      </div>
+      <div>
+        <div class="component">
+          <h3>Construction set</h3>
+          <p>The set consists of tangram pieces with customized cutouts &mdash; these cutouts enable the pieces to be connected in ways that facilitate 3D construction. By adding another dimension to their creations, learners can comprehend the spatial relations behind their designs.</p>
+          <!--<p>The set consists of tangram pieces with customized cutouts which enable them to be connected in different ways. These pieces add a new dimension to the learner's imagination, giving rise to boundless 3D creations.</p>-->
+        </div>
+        <div class="component">
+          <h3>Challenge cards</h3>
+          <p>Challenge cards depict the flat projections of a 3D object from three different vantage points: front, side, and top (aerial). Much like a tangram puzzle, the cards challenge the learner to recreate the entire 3D structure just by interpreting the 2D silhouettes.</p>
+          <!--<p>Challenge cards depict the 2D projections of a single 3D object from three different viewpoints: front, side, and top (aerial). They challenge the learner to connect the pieces in a way that matches the silhouettes from all three angles.</p>-->
+        </div>
+        <div class="component">
+          <h3>Digital application</h3>
+          <p>Through the digital application, learners can upload and share their own creations, making personalized challenge cards for the rest of the Buildagram community.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- video -->
+    <div id="video" class="style2">
+      <h2>How does it work?</h2>
+      <iframe width="840" height="472.5" src="https://www.youtube.com/embed/WLg0mijvSy8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br>
+      <a href="/gallery.html">
+        <button>View creations</button>
+      </a>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+      Danielle Cruz 2020
+    </div>
+
+
+
+
+  </body>
+</html>

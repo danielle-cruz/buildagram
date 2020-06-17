@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/icon.png">
+    <title>Buildagram</title>
+
+    <!-- These two lines provide automatic page and style reloading when files change -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/lib/client/updater.js" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <div id="nav-bar">
+      <!-- course number link -->
+      <nav id="logo">
+        <a href="index.html">
+          <img src="images/icon.png"> Buildagram
+        </a>
+      </nav>
+      <nav>
+        <ul id="nav-links">
+        <!-- navigation links -->
+          <li><a href="index.html">About</a></li>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- team -->
+    <div id="team" class="banner">
+      <div id="title">
+        <h1>Our Team</h1>
+      </div>
+      <img src="images/team/team.png">
+      <div class="caption">
+        <p>It all started with a group project in course about designing learning technologies at the Stanford Graduate School of Education.</p>
+      </div>
+    </div>
+
+    <!-- bios -->
+    <div id="bios">
+      <div class="bio">
+        <img src="images/team/adelmo.png">
+        <h2>Adelmo Eloy</h2>
+        <p>Adelmo is a LDT Master's Student in the Graduate School of Education.</p>
+
+      </div>
+      <div class="bio">
+        <img src="images/team/danielle.png">
+        <h2>Danielle Cruz</h2>
+        <p>Danielle is a third-year undergraduate student in the Symbolic Systems Program at Stanford University. She studies Human-Computer Interaction and is pursuing a minor in Education. Having tutored and mentored kids from ages 3 to 17, Danielle is interested in discovering ways to make learning more equitable and more accessible. Her past experiences include: founding an after-school science program for fourth graders;  developing an English course for low-income students in Brazil; and analyzing ESOL education strategy at a non-profit in New York City.</p>
+      </div>
+      <div class="bio">
+        <img src="images/team/kavindya.png">
+        <h2>Kavindya Thennakoon</h2>
+        <p>Kavindya is currently a dean’s fellow at the Stanford Graduate School of Education pursuing a Masters in Learning, Design and Technology with a research focus on Social, Emotional Learning (SEL) and Metacognition. In 2014 she co-founded Without Borders; a social enterprise focused on designing innovative learning and training tools for local schools and educators. The organization runs four Idea Labs across Sri Lanka and has trained 2600+ young people and local teachers in design thinking, problem solving and creative learning pedagogies.</p>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+      Danielle Cruz 2020
+    </div>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/icon.png">
+    <title>Buildagram</title>
+
+    <!-- These two lines provide automatic page and style reloading when files change -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/lib/client/updater.js" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="gallery.js"></script>
+
+
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <div id="nav-bar">
+      <!-- course number link -->
+      <nav id="logo">
+        <a href="index.html">
+          <img src="images/icon.png"> Buildagram
+        </a>
+      </nav>
+      <nav>
+        <ul id="nav-links">
+        <!-- navigation links -->
+          <li><a href="index.html">About</a></li>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- gallery -->
+    <div class="banner">
+      <div id="title">
+        <h1>The Gallery</h1>
+      </div>
+      <img src="images/gallery/gallery.png">
+      <div class="caption">
+        <p>From kangaroos and dinosaurs to motorcycles and randomness, check out some of the wild creations that learners have constructed with Buildagram!</p>
+      </div>
+      <!-- images -->
+      <div id="gallery">
+      </div>
+    </div>
+
+    <!-- upload -->
+    <div class="style1">
+      <h2>Don't see your creation here?</h2>
+      <div>
+        <input type="file" id="upload">
+        <label for="upload">Upload an image!</label>
+      </div>
+    </div>
+
+
+    <!-- footer -->
+    <div id="footer">
+      Danielle Cruz 2020
+    </div>
+
+
+
+
+  </body>
+</html>

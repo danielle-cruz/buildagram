@@ -1,0 +1,50 @@
+CS193X Final Project Milestone
+=============================
+
+Project Name: Buildagram
+Your Name: Danielle Cruz
+Your SUNetID: dcruz21
+
+Overview
+--------
+
+I've focused most on designing the user interface of the website. I've been experimenting with different HTML and CSS features, looking up ways to embed YouTube videos, add transitions, and even edit images. I explored a lot of different page layouts, but I ended up settling on a banner design where users scroll through the webpage in big blocks that span the entire width. I still have to implement the "Gallery," "Team," and "Contact" pages and write the Javascript frontend and backend for all of the pages. Something I am a bit unsure of is what my API and database will look like in the backend. I still have to map out what these backend structures will look like.
+
+The features I'm planning which will depend on persistent storage are a "Contact Us" email form and an image gallery where users can upload images. I've read the resource that Michael kindly emailed me about uploading images, but I still have to figure out how to collect some sort of user info so that people can't just randomly upload anything. Any insights or suggestions on this would be appreciated!
+
+One final thing that I would like to explore a bit more is embedding GIFs or videos that play as a background.
+
+
+Project Changes
+---------------
+One major change to my project was adding the image gallery idea. On the other hand, I decided to scrap the "virtual tangram puzzle" feature (where users could drag and drop different shapes), as I am now realizing that it might be too great of a scope for these last few weeks. However, I think that the image gallery will be much more useful for page visitors and much more manageable for me.
+
+API
+---
+
+POST /images
+Create a new image. 
+Request body: The image file that the user wants to upload.
+Will be used to add a new image document to the Images collection of the database.
+
+GET /images
+Loads the gallery of images onto the user's page.
+Gets all image documents from the Images collection of the database and returns them as an array of images to be displayed on the page.
+
+POST /images/:image/comment
+Create a new comment.
+Request body: The text of the comment.
+Will be used to add a new comment document to the Comments collection of the database.
+
+
+External libraries and code
+---------------------------
+I don't plan on using any external libraries. I might do a bit more research as I get deeper into coding the more complex parts of the backend, but so far, I've really only been searching for quick bits of code about how to do specific things like embed YouTube videos or add transitions.
+
+Collaboration and resources
+---------------------------
+I've consulted my other Buildagram team members throughout the process.
+
+Anything else?
+-------------
+This past week was really busy with balancing everything, but hoping to make more progress on the project, especially with the backend, after this weekend. Also, this has probably been my favorite class this quarter! I've really enjoyed the assignments, and I appreciate the chance to put it all together for this final project.

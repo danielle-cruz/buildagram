@@ -1,0 +1,281 @@
+* {
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+body > div {
+  margin: 3rem;
+  padding: 3rem 0rem;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem;
+  padding: .5rem;
+}
+
+#nav-bar a {
+  color: black;
+  text-decoration: none;
+}
+
+#logo {
+  margin-left: 1rem;
+  font-size: xx-large;
+}
+
+#logo img {
+  width: 1em;
+  height: 1em;
+}
+
+#nav-links a:hover {
+  color: grey;
+}
+
+#nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#nav-links li {
+  margin: 0rem 1rem;
+  display: block;
+  font-size: large;
+  position: relative;
+  padding-bottom: 0.2em;
+}
+
+#nav-links li:not(.active):hover:after{
+  width: 100%;
+}
+
+#nav-links li:not(.active)::after{
+  width: 0%;
+  transition: width 0.4s ease-in-out;
+}
+
+#nav-links li:after {
+  border-bottom: .1rem solid black;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#footer {
+  margin: 0rem;
+  padding: 2rem;
+  color: white;
+  font-size: large;
+  background-color: #e3c74b; black;
+  text-align: center;
+}
+
+.banner {
+  margin-top: 0rem;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.banner img {
+  width: 80%;
+}
+
+#title {
+  width: 70%;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+.caption {
+  width: 60%;
+}
+
+.banner button {
+  padding: 1rem 2rem;
+  background-color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: solid 2px black;
+  border-radius: 2rem;
+  color: black;#e3c74b;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.banner button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+.style1 {
+  margin: 0rem auto;
+  padding: 2rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.style1 button, label{
+  padding: 1rem 2rem;
+  background-color: black;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: solid 2px white;#e3c74b;
+  border-radius: 2rem;
+  color: white;#e3c74b;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.style1 button:hover, label:hover  {
+  background-color: white;#e3c74b;
+  color: black;
+}
+
+.style2 {
+  margin: 0rem auto;
+  padding: 2rem;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.style2 button {
+  padding: 1rem 2rem;
+  background-color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: solid 2px black;#e3c74b;
+  border-radius: 2rem;
+  color: black;#e3c74b;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.style2 button:hover{
+  background-color: black;#e3c74b;
+  color: white;
+}
+
+iframe {
+  margin: 1.5rem;
+}
+
+#components > div {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+#component-images img{
+  margin: 0rem 3rem;
+  object-fit: contain;
+  flex-grow: 1;
+  width: 2rem;
+}
+
+.component {
+  margin: 0rem 2rem;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+#description {
+  margin: 0rem auto;
+  padding: 10rem 3rem;
+  background-image: url(/images/story/cue-buildagram.png);
+  background-size: cover;
+  color: white;
+  text-align: left;
+}
+
+#bios {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bio {
+  margin: 2rem;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.bio img {
+  width: 20vw;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 2rem 0rem;
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+h3 {
+  font-size: x-large;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: x-large;
+  line-height: 1.5;
+}
+
+#bios p, #components p {
+  font-family: 'Roboto', sans-serif;
+  font-size: medium;
+  text-align: left;
+  line-height: 1.75;
+}
+
+#upload {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+label {
+  display: inline-block;
+  margin: 1rem;
+}
+
+#gallery {
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#gallery img {
+  margin: .5rem;
+  object-fit: cover;
+  height: 20rem;
+  width: 20rem;
+}
